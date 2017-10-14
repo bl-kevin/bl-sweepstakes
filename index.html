@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+  
+  <title>BrightLocker Sweepstakes</title>
+  <meta name="description" content="BrightLocker is the future of interaction between gamers, developers, and the amazing games that bring them together. It’s the place where gaming fans can earn rewards while they find new games, interact with their favorite developers, receive exclusive access and items, and even shape how games are made.">
+
+  <!--Share Tags-->
+  <meta property="og:url" content="https://www.brightlocker.com/loginsignup">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="BrightLocker: Connecting Gamers with Developers">
+  <meta property="og:description" content="">
+  <meta property="og:image" content="/images/brightlocker-logo-splash-big.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@brightlocker">
+  <meta name="twitter:title" content="BrightLocker: Connecting Gamers with Developers">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image" content="/images/brightlocker-logo-splash-big.png">
+
+  <!--Stylesheet-->
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+
+  <div class="wrapper wrapper--shadow">  
+    <div class="main-container">
+      <!--Header-->
+      <header class="header">
+        <img class="logo logo--centered" src="media/img/header__logo.png" alt="BrightLocker"></img>
+      </header>
+      <!--Banner-->
+      <div class="banner">
+        <a class="banner__terms" href="#" target="_blank">Terms and Conditions Apply</a>
+        <img class="banner__image" src="media/img/sample-banner.jpg"></img>
+      </div>
+      <!--Sharing-->
+      <div class="sharing">
+        <div class="sharing__info">Share us with your friends to earn rewards: </div>
+        <div class="sharing__links">
+            <a class="sharing__links sharing__link sharing__link--facebook">
+              <i class="sharing__link--facebook sharing-icon sharing-icon--fb" data-href="https://www.brightlocker.com/loginsignup"></i>
+              <span class="sharing-text">SHARE US!</span>
+            </a>
+            <a class="sharing__links sharing__link sharing__link--twitter">
+              <i class="sharing__link--twitter sharing-icon sharing-icon--tw"></i>
+              <span class="sharing-text">TWEET US!</span>
+            </a>
+            <a class="sharing__links sharing__link sharing__link--copy">
+              <i class="sharing__link--copy sharing-icon sharing-icon--cp"></i>
+              <span class="sharing-text">COPY LINK!</span>
+            </a>
+        </div>
+      </div>
+      <!--Sign Up-->
+      <div class="form">
+        <div class="sign-up-form">
+          <div class="sign-up-head">
+            <div class="sign-up-head sign-up-head__icon"></div>
+          </div>
+          <div class="sign-up-main">
+            <div class="sign-up-main__heading t2 bold">SIGN UP!</div>
+            <form class="sign-up-boxes">
+              <div class="form-group">
+                <input name="email-input" class="form-group__control" type="email" placeholder="EMAIL" required>
+              </div>
+              <div class="form-group">
+                <input name="password-input" class="form-group__control" type="password" placeholder="CHOOSE PASSWORD" required minlength="8" maxlength="512">
+              </div>
+              <div class="form-group">
+                <input name="confirm-password-input" class="form-group__control" type="password" placeholder="CONFIRM PASSWORD" required>
+              </div>
+              <div class="form-group">
+                <input name="username-input" class="form-group__control" type="username" placeholder="USERNAME" required minlength="3" maxlength="15">
+              </div>
+              <div class="form-group">
+                <div class="form-dropdowns">
+                  <select class="form-dropdowns__dropdown" onchange="populateDaysDropdown()">
+                    <option value="?" selected="selected"></option>
+                    <option label="JAN" value="number:1">JAN</option>
+                    <option label="FEB" value="number:2">FEB</option>
+                    <option label="MAR" value="number:3">MAR</option>
+                    <option label="APR" value="number:4">APR</option>
+                    <option label="MAY" value="number:5">MAY</option>
+                    <option label="JUN" value="number:6">JUN</option>
+                    <option label="JUL" value="number:7">JUL</option>
+                    <option label="AUG" value="number:8">AUG</option>
+                    <option label="SEP" value="number:9">SEP</option>
+                    <option label="OCT" value="number:10">OCT</option>
+                    <option label="NOV" value="number:11">NOV</option>
+                    <option label="DEC" value="number:12">DEC</option>
+                  </select>
+                  <select class="form-dropdowns__dropdown">
+                    <option value="?" selected="selected"></option>
+                  </select>
+                  <select class="form-dropdowns__dropdown">
+                    <option value="?" selected="selected"></option>
+                    <option label="2017" value="number:2017">2017</option>
+                  </select>
+                  <span class="form-dropdowns__label">Date of Birth</span>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="checkbox">
+                  <input name="terms-input" type="checkbox" id="sign-up-tos" required>
+                  <label for="sign-up-tos" class="checkbox__label">
+                    <span class="tos-label">
+                      I agree to <a tabindex="-1" class ="tos-label__link" href="https://www.brightlocker.com/info/termsofuse" target="_blank">Terms of Use</a>
+                    </span>
+                  </label>
+                </div>
+              </div>
+              <div class="sign-up-boxes__button">
+                <button type="submit" class="btn btn-pp-blue">Create Account</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!--Video-->
+      <div class="video-embed">
+        <div class="video-container">
+          <div class="video-container overlay"></div>
+          <video class="video-container__bait" width="100%" height="100%" autoplay loop muted>
+            <source src="media/vid/B2C-preview.mp4" type="video/mp4" />
+          </video>
+          <div class="video-cta">
+            <div class="cta-text">
+              <p class="cta-text--huge">Watch the Video</p>
+              <p class="cta-text--sub">LEARN HOW BRIGHTLOCKER CONNECTS GAMERS WITH DEVELOPERS.</p>
+            </div>
+            <!--
+            <div class="cta-link">
+            </div> -->
+          </div>
+          <iframe class="video-container__iframe" width="560" height="315" src="https://www.youtube.com/embed/3qMqpHPdOqs?rel=0" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main JS -->
+  <script type="text/javascript" src="js/scripts.js"></script>
+
+</body>
+</html>
